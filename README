@@ -1,0 +1,5 @@
+Scraper is an application that demonstrates saving Craigslist search terms. Then, in the background a Node.js process reads those saved search terms, queries Craigslist and stores the results in the database.
+
+The system was initially implemented to run on AWS but could also be ported to run on Azure w/ the DynamoDb connection back to AWS.
+
+An architecture diagram is available in the ScraperDesing.png file.
