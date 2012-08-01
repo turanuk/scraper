@@ -1,0 +1,37 @@
+﻿@model IEnumerable<ClSearcherFrontEnd.Models.SearchData>
+@{
+    ViewBag.Title = string.Format("Search Results for \"{0}\"", Request.QueryString["term"]);
+}
+<h2>@ViewBag.Title</h2>
+<p>
+    @Html.ActionLink("Back to search terms", "Index", "SearchTerm")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+        </th>
+    </tr>
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @if (String.IsNullOrEmpty(item.Price)) {
+                    @: FREE!
+                } else {
+                    @Html.DisplayFor(modelItem => item.Price)
+                }
+            </td>
+            <td>
+                <a href="@item.Link" target="_blank">Details</a>
+            </td>
+        </tr>
+    }
+</table>

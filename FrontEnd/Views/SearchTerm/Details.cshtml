@@ -1,0 +1,22 @@
+﻿@model ClSearcherFrontEnd.Models.SearchTerm
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>SearchTerm</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Term)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Term)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
