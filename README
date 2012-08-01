@@ -2,4 +2,4 @@ This application allows saving Craigslist search terms. A Node.js process reads 
 
 The system was initially implemented to run on AWS but could also be ported to run on Azure w/ the DynamoDb connection back to AWS.
 
-An architecture diagram is available in the ScraperDesing.png file.
+An architecture diagram is available in the ArchDiagram.png file.
