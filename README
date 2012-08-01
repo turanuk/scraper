@@ -1,4 +1,4 @@
-Scraper is an application that demonstrates saving Craigslist search terms. Then, in the background a Node.js process reads those saved search terms, queries Craigslist and stores the results in the database.
+This application allows saving Craigslist search terms. A Node.js process reads the saved search terms, queries Craigslist and stores the results in an AWS DynamoDb database. Currently, the system is hardcoded to query Seattle based Craigslist data.
 
 The system was initially implemented to run on AWS but could also be ported to run on Azure w/ the DynamoDb connection back to AWS.
 
