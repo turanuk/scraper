@@ -1,0 +1,11 @@
+{
+  "name": "scraper",
+  "description": "scraper",
+  "version": "0.1.0",
+  "dependencies": {
+    "request": "2.9.x",
+    "jsdom": "0.2.x",
+    "dynode": "0.6.x",
+    "async": "0.1.x"
+  }
+}
